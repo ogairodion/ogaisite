@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<title>Шаблон для верстки</title>
+	<!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+	<!--[if lt IE 9]> 
+	<script src="app/js/selectivizr.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> 
+	<script src="app/js/rem.min.js"></script> 
+	<!-- <![endif] -->
+</head>
+	<body>
+
+	<div id="form-wrap">
+		<form action="mail.php"  id="form">
+			<i id="button-close" class="fa fa-times fa-2x"></i>
+			<i class="fa fa-user-circle fa-3x" id="user-icon"></i>
+			<input type="text" class="form-item" name="name" placeholder="Enter Your Name" onclick="this.placeholder = ' ';" onblur="this.placeholder = 'Enter Your Name';" id="name" required="">
+			<input type="email" class="form-item" name="email" placeholder="Enter Your E-Mail" onclick="this.placeholder = ' ';" onblur="this.placeholder = 'Enter Your E-Mail';" id="email" required="">
+			<input type="phone" class="form-item" name="phone" placeholder="Enter Your Phone Number" onclick="this.placeholder = ' ';" onblur="this.placeholder = 'Enter Your Phone Number';" id="phone" required="">
+			<textarea name="message" id="" cols="30" rows="10" class="form-item" placeholder="Message..." onclick="this.placeholder = ' ';" onblur="this.placeholder = 'Message...';"></textarea>
+			<input type="submit" id="submit-form" class="btn" value="Submit">
+		</form>
+	</div>
+	<button id="form-open" class="btn-open">Click Here!!!</button>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>
